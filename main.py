@@ -16,10 +16,26 @@ def iniciar_jogo():
     except Exception as e:
         messagebox.showerror("Erro", f"Não foi possível iniciar o jogo: {e}")
 
+def pong_jogo():
+    nome_jogador = entry_nome.get()
+    if nome_jogador.strip() == "":
+        messagebox.showwarning("Aviso", "Por favor, insira um nome válido.")
+        return
+    
+    try:
+        subprocess.Popen(['python', 'pong.py', nome_jogador])
+        tela_inicial.destroy()  # Fecha a tela inicial após iniciar o jogo
+    except Exception as e:
+        messagebox.showerror("Erro", f"Não foi possível iniciar o jogo: {e}")
+
 # Usando o caminho absoluto da imagem
-caminho_imagem = r"C:\Users\rodrigo.kamiguchi\Desktop\snaker\cobrinha.jpg"  # Ajuste o caminho se necessário
-if not os.path.exists(caminho_imagem):
-    raise FileNotFoundError(f"O arquivo {caminho_imagem} não foi encontrado.")
+snake_imagem = r"C:\Users\rodrigo.kamiguchi\Desktop\snaker\cobrinha.jpg"  # Ajuste o caminho se necessário
+if not os.path.exists(snake_imagem):
+    raise FileNotFoundError(f"O arquivo {snake_imagem} não foi encontrado.")
+
+pong_imagem = r"C:\Users\rodrigo.kamiguchi\Desktop\snaker\pong.jpg"  # Ajuste o caminho se necessário
+if not os.path.exists(pong_imagem):
+    raise FileNotFoundError(f"O arquivo {pong_imagem} não foi encontrado.")
 
 # Criação da tela inicial
 tela_inicial = tk.Tk()
@@ -35,14 +51,28 @@ entry_nome = tk.Entry(tela_inicial, font=("Helvetica", 14), width=20)
 entry_nome.pack(pady=10)
 
 # Carregar a imagem do botão
-imagem_botao = Image.open(caminho_imagem)  # Certifique-se de que este caminho está correto
-imagem_botao = imagem_botao.resize((100, 100), Image.LANCZOS)  # Redimensiona a imagem
-imagem_botao_tk = ImageTk.PhotoImage(imagem_botao)
+snake_botao = Image.open(snake_imagem)  # Certifique-se de que este caminho está correto
+snake_botao = snake_botao.resize((100, 100), Image.LANCZOS)  # Redimensiona a imagem
+snake_botao_tk = ImageTk.PhotoImage(snake_botao)
 
-# Botão para iniciar o jogo
-botao_iniciar = tk.Button(tela_inicial, image=imagem_botao_tk, command=iniciar_jogo,
+# Carregar a imagem do botão para o Pong
+pong_botao = Image.open(pong_imagem)  # Certifique-se de que este caminho está correto
+pong_botao = pong_botao.resize((100, 100), Image.LANCZOS)  # Redimensiona a imagem do Pong
+pong_botao_tk = ImageTk.PhotoImage(pong_botao)
+
+# Frame para os botões
+frame_botoes = tk.Frame(tela_inicial, bg="#2C3E50")
+frame_botoes.pack(pady=30)
+
+# Botão para iniciar o jogo da cobrinha
+botao_iniciar = tk.Button(frame_botoes, image=snake_botao_tk, command=iniciar_jogo,
                           bg="#27AE60", fg="#FFFFFF", font=("Helvetica", 14), padx=10, pady=5)
-botao_iniciar.pack(pady=30)
+botao_iniciar.pack(side=tk.LEFT, padx=10)  # Coloca o botão à esquerda
+
+# Botão para iniciar o jogo Pong
+botao_pong = tk.Button(frame_botoes, image=pong_botao_tk, command=pong_jogo,
+                          bg="#27AE60", fg="#FFFFFF", font=("Helvetica", 14), padx=10, pady=5)
+botao_pong.pack(side=tk.LEFT, padx=10)  # Coloca o botão à esquerda
 
 # Iniciar o loop da interface gráfica
 tela_inicial.mainloop()

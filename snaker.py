@@ -41,12 +41,6 @@ clock = pygame.time.Clock()
 snake_block = 10
 snake_speed = 15
 
-# Carregar imagens
-snake_image = pygame.image.load('snake.jpg')  # Imagem da cobra
-food_image = pygame.image.load('ratinho.png')  # Imagem da comida
-background_image = pygame.image.load('grama.jpg')  # Imagem de fundo
-
-
 # Fonte para a pontuação
 font_style = pygame.font.SysFont("bahnschrift", 30)
 score_font = pygame.font.SysFont("comicsansms", 35)
