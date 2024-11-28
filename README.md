@@ -1,8 +1,8 @@
-## About:
+# About:
 
 This collection of games, developed using the Pygame library, offers a fun, interactive experience with a variety of classic games. The games are designed with a combination of Pygame for graphics, sound, and gameplay logic, as well as SQLite for saving high scores. Whether you're revisiting nostalgic games or experiencing them for the first time, this collection provides hours of entertainment.
 
-# 1. Snake Game
+## 1. Snake Game
 Game Overview:
 
 The Snake game is a classic arcade game where the player controls a snake that grows longer each time it eats food. The goal is to avoid collisions with the walls and the snake’s own body. The game features a high-score system powered by an SQLite database to keep track of the player’s best score.
@@ -22,7 +22,7 @@ Control the snake using the W, A, S, D keys to collect food.
 Avoid hitting the walls or the snake’s own body.
 Each time you eat food, your score increases, and the snake grows.
 Your score is stored, and the highest score is saved in the database.
-# 2. Pong Game
+## 2. Pong Game
 Game Overview:
 
 Pong is a classic two-player arcade game where players control paddles on opposite sides of the screen to bounce a ball back and forth. The first player to reach a certain score wins the game. The ball’s movement is randomized using Python's random module.
@@ -39,7 +39,7 @@ Start the game by running the pong_game.py file.
 The ball is randomly served at the start of the game.
 Control the paddles to bounce the ball and try to score points by making your opponent miss.
 The game ends when a player reaches the required number of points, and a new game can begin.
-# 3. Technical Details
+## 3. Technical Details
 Language: Python 3.x
 Libraries:
 Pygame: Used for game graphics, sound, and logic.
@@ -51,7 +51,7 @@ Pong: 800x400 pixels (adjustable in the game settings).
 FPS: Default is 60 FPS (adjustable in the game code).
 The games are optimized for smooth performance, but the frame rate can be customized based on your system’s capabilities by modifying the FPS setting in the game code.
 
-# 4. Controls
+## 4. Controls
 Snake Game Controls:
 W: Move up
 A: Move left
@@ -60,13 +60,13 @@ D: Move right
 Pong Game Controls:
 Left Paddle (Player 1): W (up) / S (down)
 Right Paddle (Player 2): Up Arrow / Down Arrow
-# 5. Credits
+## 5. Credits
 Developer: [Rodrigo kamiguchi]
 Assets:
 Sprites and Images: Custom-created or sourced from open repositories (if applicable).
 Sound Effects and Music: Open-source libraries or original compositions.
 Libraries: Python, Pygame, SQLite3.
-# 6. License
+## 6. License
 This collection of games is open-source and distributed under the MIT License. You are free to modify, share, and use the code, as long as you provide proper attribution.
 
 Future Improvements (Optional)
