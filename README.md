@@ -60,13 +60,24 @@ D: Move right
 Pong Game Controls:
 Left Paddle (Player 1): W (up) / S (down)
 Right Paddle (Player 2): Up Arrow / Down Arrow
-## 5. Credits
+## 5. Screenshot
+![image](https://github.com/user-attachments/assets/bd72bb07-2c43-4a46-a813-c7f3f81769ce)
+![image](https://github.com/user-attachments/assets/9bccea2a-9887-4abf-9d71-a806aef81a93)
+![image](https://github.com/user-attachments/assets/b4eb073c-c6a9-4208-834c-7490fe2f6edd)
+![image](https://github.com/user-attachments/assets/04419765-c9bb-495e-b41a-9cccd1ebb464)
+
+
+
+
+
+## 6. Credits
 Developer: [Rodrigo kamiguchi]
 Assets:
 Sprites and Images: Custom-created or sourced from open repositories (if applicable).
 Sound Effects and Music: Open-source libraries or original compositions.
 Libraries: Python, Pygame, SQLite3.
-## 6. License
+
+## . License
 This collection of games is open-source and distributed under the MIT License. You are free to modify, share, and use the code, as long as you provide proper attribution.
 
 Future Improvements (Optional)
