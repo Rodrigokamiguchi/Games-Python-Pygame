@@ -76,7 +76,7 @@ Sprites and Images: Custom-created or sourced from open repositories (if applica
 Sound Effects and Music: Open-source libraries or original compositions.
 Libraries: Python, Pygame, SQLite3.
 
-## . License
+## 7. License
 This collection of games is open-source and distributed under the MIT License. You are free to modify, share, and use the code, as long as you provide proper attribution.
 
 Future Improvements (Optional)
