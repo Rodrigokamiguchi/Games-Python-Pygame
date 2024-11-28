@@ -22,6 +22,7 @@ Control the snake using the W, A, S, D keys to collect food.
 Avoid hitting the walls or the snake’s own body.
 Each time you eat food, your score increases, and the snake grows.
 Your score is stored, and the highest score is saved in the database.
+
 ## 2. Pong Game
 Game Overview:
 
@@ -39,6 +40,7 @@ Start the game by running the pong_game.py file.
 The ball is randomly served at the start of the game.
 Control the paddles to bounce the ball and try to score points by making your opponent miss.
 The game ends when a player reaches the required number of points, and a new game can begin.
+
 ## 3. Technical Details
 Language: Python 3.x
 Libraries:
@@ -60,15 +62,12 @@ D: Move right
 Pong Game Controls:
 Left Paddle (Player 1): W (up) / S (down)
 Right Paddle (Player 2): Up Arrow / Down Arrow
-## 5. Screenshot
+
+## 5. Screenshots
 ![image](https://github.com/user-attachments/assets/bd72bb07-2c43-4a46-a813-c7f3f81769ce)
 ![image](https://github.com/user-attachments/assets/9bccea2a-9887-4abf-9d71-a806aef81a93)
 ![image](https://github.com/user-attachments/assets/b4eb073c-c6a9-4208-834c-7490fe2f6edd)
 ![image](https://github.com/user-attachments/assets/04419765-c9bb-495e-b41a-9cccd1ebb464)
-
-
-
-
 
 ## 6. Credits
 Developer: [Rodrigo kamiguchi]
